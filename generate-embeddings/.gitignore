@@ -1,0 +1,5 @@
+docs/*
+!docs/.gitkeep
+node_modules
+dist.js
+.env
