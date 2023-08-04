@@ -1,3 +1,8 @@
 name = "pinecone-example"
 main = "src/index.ts"
 compatibility_date = "2023-08-02"
+
+# Enable this to allow additional subrequests, which
+# should allow Notion indexing in Pinecone to work from
+# the Workers function, instead of locally
+# usage_model = "unbound"

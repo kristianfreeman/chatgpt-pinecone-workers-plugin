@@ -8,11 +8,11 @@ import { VectorDBQAChain } from "langchain/chains";
 export class GetSearch extends OpenAPIRoute {
 	static schema = {
 		tags: ["Search"],
-		summary: "Make health queries against Huberman Lab podcast transcripts",
+		summary: "Make queries against your Notion workspace about your life",
 		parameters: {
 			q: Query(String, {
 				description: "The query to search for",
-				default: "how do I sleep better?",
+				default: "What books should I read?",
 			}),
 		},
 		responses: {
@@ -22,9 +22,7 @@ export class GetSearch extends OpenAPIRoute {
 					sourceDocuments: [
 						{
 							pageContent: 'Example content',
-							metadata: {
-								id: '02. Master Your Sleep & Be More Alert When Awake.md'
-							}
+							metadata: {}
 						}
 					]
 				},
