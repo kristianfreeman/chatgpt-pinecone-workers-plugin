@@ -1,5 +1,3 @@
-# notion + pinecone + chatgpt + cloudflare workers example
+# Notion + Pinecone + ChatGPT + Cloudflare Workers Example
 
-example project showing how to (using cloudflare workers) index a notion workspace into a pinecone db and then make queries against it using chatgpt.
-
-config/setup coming soon
+[Check out the tutorial to learn how to deploy this!](https://developers.cloudflare.com/workers/tutorials/create-a-chatgpt-powered-search-plugin)
