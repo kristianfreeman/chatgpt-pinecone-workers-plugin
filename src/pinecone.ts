@@ -1,3 +1,5 @@
+import { CloudflareKVCache } from "langchain/cache/cloudflare_kv";
+import { CloudflareD1MessageHistory } from "langchain/stores/message/cloudflare_d1";
 import { NotionAPILoader } from "langchain/document_loaders/web/notionapi";
 import { OpenAIEmbeddings } from "langchain/embeddings/openai"
 import { PineconeClient } from "@pinecone-database/pinecone";
@@ -47,6 +49,7 @@ class IndexToPineconeHandler {
       new OpenAIEmbeddings({
         openAIApiKey: this.#env.OPENAI_API_KEY,
       }),
+      // @ts-ignore
       { pineconeIndex }
     );
 

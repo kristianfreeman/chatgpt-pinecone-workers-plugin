@@ -6,3 +6,7 @@ compatibility_date = "2023-08-02"
 # should allow Notion indexing in Pinecone to work from
 # the Workers function, instead of locally
 # usage_model = "unbound"
+
+[[kv_namespaces]]
+binding = "KV_NAMESPACE"
+id = "4603cee4c7954c6791ff7304cd104b45"
